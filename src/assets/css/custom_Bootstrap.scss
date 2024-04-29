@@ -1,0 +1,19 @@
+@import "./../../../node_modules/bootstrap/scss/functions";
+@import "./../../../node_modules/bootstrap/scss/variables";
+@import "./../../../node_modules/bootstrap/scss/variables-dark";
+
+$firstblue: #1e0342;
+$secondblue : #0e46a3;
+$thirdteal : #9ac8cd;
+$fourteal: #e1f7f5;
+
+$custom_map :(
+    firstblue: $firstblue,
+    secondblue: $secondblue,
+    thirdteal: $thirdteal,
+    fourteal: $fourteal,
+);
+
+$theme-colors: map-merge($theme-colors, $custom_map);
+
+@import "./../../../node_modules/bootstrap/scss/bootstrap";
