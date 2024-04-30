@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <link rel="stylesheet" href="/src/assets/css/style.css" />
 </head>
+
 <body>
-    
+    <nav class="navbar bg-firstblue">
+        <div class="container">
+            <a class="navbar-brand text-fourteal" href="#">
+                <img  src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24" />
+            </a>
+        </div>
+    </nav>
+    <main>
+        <div class="container text-center">
+            <div class="row justify-content-center ">
+                <div class="col-8  m-5 p-3 bg-thirdteal rounded-2">
+                    <div class="text-center text-firstblue">
+                        <h2>Notre centre</h2>
+                    </div>
+                    <div class="text-center">
+                        <p>
+                            1028 Avenue du pain au chocolat
+                            <br />
+                            06250 Mougins
+                            <br>
+                            <a class="text-decoration-none link-firstblue" href="mailto:contact@laraQuette.fr">contact@laraQuette.fr</a>
+                        </p>
+                        <a class="text-decoration-none link-firstblue" href="tel:+33606987441">0606987441</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center p-2">
+                <div class="row justify-content-center m-5">
+                    <div class="col-4  rounded-2 m-2 ">
+                        <h2 class="fw-bold text-firstblue">Contact</h2>
+                        <h4 class="text-firstblue fw-semibold">Nos Horaires</h4>
+                        <p class="fw-medium text-firstblue">
+                            <strong>Lundi au vendredi</strong>
+                            <br />
+                            10h-22h30
+                        </p>
+                        <p class="fw-medium text-firstblue">
+                            <strong>Samedi au dimanche</strong>
+                            <br />
+                            9h-20h
+                        </p>
+                        <h4 class="text-firstblue fw-semibold">Une question?</h4>
+                        <p class="fw-medium text-firstblue">
+                            Nous sommes à votre écoute,
+                            <br />
+                            prenez contact via le formulaire.
+                        </p>
+                    </div>
+                    <div class="col-4  rounded-2 m-2">
+                        <div class="row justify-content-center input-group">
+                            <div class=" col-sm-6">
+                                <label for="nom"></label>
+                                <input class="form-control" type="text" id="nom" placeholder="Nom" required />
+                            </div>
+                            <div class=" col-sm-6 ">
+                                <label for="Prenom"></label>
+                                <input class="form-control"  type="text" id="prenom" placeholder="Prenom" required />
+                            </div>
+                            
+                            <div class=" ">
+                                <label for="email"></label>
+                                <input class="form-control" type="email" id="email" placeholder="Email" required />
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
