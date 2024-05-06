@@ -33,6 +33,7 @@ export default class Router {
         // this.#screen = document.createElement('div'); // crée un nouvel élément div dans this.#screen
         // this.#screen.textContent = location.pathname; // récupère le chemin (url) de la page actuelle (à remplacer par le code à insérer)
         if (location.pathname == "/" || location.pathname == "/index") {
+            // this.#screen = new HomeScreen();
             this.#screen = new HomeScreen();
         }
         else if (location.pathname == "/contact") {
