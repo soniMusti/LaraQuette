@@ -49,7 +49,7 @@ export default class ContactScreen extends HTMLElement{
           </nav>
     </header>
 </div>
-<div class="container-fluid secondcontainer d-flex align-items-center"
+<div class="container secondcontainer d-flex align-items-center"
         style="background-image: url(/src/assets/img/padelFilet2.jpeg); ">
         <div class="container text-center mt-4 mb-4 justify-content-center ">
             <div class="row justify-content-center  ">
