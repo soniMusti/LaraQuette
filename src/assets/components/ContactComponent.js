@@ -4,6 +4,19 @@ export default class ContactComponent extends HTMLElement{
         super();
 
         this.innerHTML = this.render();
+
+        this.querySelector("form").onsubmit = this.handleContactFormSubmit;
+    }
+
+    handleContactFormSubmit =(e) => {
+        e.preventDefault();
+        const entries = Object.fromEntries(new FormData(e.target));
+        //const email = e.target.querySelector("#email").value;
+        //const nom = e.target.querySelector("#nom").value;
+        //const prenom = e.target.querySelector("#prenom").value;
+        //console.log(email);
+        console.log(entries);
+
     }
 
     render() {
@@ -55,26 +68,26 @@ export default class ContactComponent extends HTMLElement{
                             </p>
                         </div>
                         <div class="col-4  rounded-2 m-2">
-                            <form action="contact.html">
+                            <form novalidate>
                                 <div class="row justify-content-center input-group">
                                     <div input-init class=" col-sm-6">
                                         <label for="nom"></label>
-                                        <input class="form-control" type="text" id="nom" placeholder="Nom" required />
+                                        <input class="form-control" type="text" name="nom" id="nom" placeholder="Nom" required />
                                     </div>
                                     <div input-init class=" col-sm-6 ">
-                                        <label for="Prenom"></label>
-                                        <input class="form-control" type="text" id="prenom" placeholder="Prenom" required />
+                                        <label for="prenom"></label>
+                                        <input class="form-control" type="text" name="prenom" id="prenom" placeholder="Prenom" required />
                                     </div>
                                     <div input-init class=" ">
                                         <label for="email"></label>
-                                        <input class="form-control form-outline" type="email" id="email" placeholder="Email" required />
+                                        <input class="form-control form-outline" name="email" type="email" id="email" placeholder="Email" required />
                                     </div>
                                     <div input-init class="">
                                         <label for="message"></label>
                                         <textarea class="form-control" name="message" id="message" cols="30" rows="10"></textarea>
                                     </div>
                                     <div>
-                                        <button data-mdb-ripple-init type="button" class="btn btn-firstblue mt-2 btn-block mb-4">Envoyer</button>
+                                        <button data-mdb-ripple-init  type="submit" class="btn btn-firstblue mt-2 btn-block mb-4">Envoyer</button>
                                     </div>
                                 </div>
                             </form>
