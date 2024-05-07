@@ -4,6 +4,7 @@ import ContactScreen from '../screens/ContactScreen.js';
 import NosCoachsScreen from '../screens/NosCoachsScreen.js';
 import ReservationsScreen from '../screens/ReservationsScreen.js';
 import RestaurationScreen from '../screens/RestaurationScreen.js';
+import NotFoundScreen from '../screens/NotFoundScreen.js';
 
 
 
@@ -49,7 +50,7 @@ export default class Router {
             this.#screen = new RestaurationScreen();
         }
         else {
-            this.#screen = "404 : Not Found";
+            this.#screen = new NotFoundScreen();
         }
         
         App.instance.render(this.#screen); // appelle la méthode render() de l'instance de App
