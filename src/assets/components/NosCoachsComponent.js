@@ -18,7 +18,7 @@ export default class NosCoachsComponent extends HTMLElement{
                             <p class="text-center firstText">Voici notre equipe de professionnel, pret à tout pour vous aider. Reservé votre cours des maintenants!</p>
                         </div>
                         <div class="row people">
-                            <div class="col-md-6 col-lg-4 item ">
+                            <div class="col-md-6 col-lg-4 item border-end ">
                                 <div class="box"><img class="rounded-circle" src="/src/assets/img/CoachG.png">
                                     <h3 class="name">Gégé </h3>
                                     <p class="title">Le Pro</p>
@@ -26,7 +26,7 @@ export default class NosCoachsComponent extends HTMLElement{
                                     <div class="social"><a href="/src/reservations.html">Reserver</a><a href="#"><img src="/src/assets/img/facebook.svg" alt=""></a><a href="#"><img src="/src/assets/img/instagram.svg" alt=""></i></a></div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-lg-4 item ">
+                            <div class="col-md-6 col-lg-4 item border-end ">
                                 <div class="box"><img class="rounded-circle" src="/src/assets/img/coachAlexx.png">
                                     <h3 class="name">Delorobia</h3>
                                     <p class="title">Le dominateur</p>

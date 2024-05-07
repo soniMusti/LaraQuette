@@ -13,7 +13,7 @@ export default class ContactComponent extends HTMLElement{
                     style="background-image: url(/src/assets/img/padelFilet2.jpeg); ">
                     <div class="container text-center mt-4 mb-4 justify-content-center ">
                         <div class="row justify-content-center  ">
-                            <div class="col-8  m-5 p-3 bg-fourteal rounded-2">
+                            <div class="col-8  m-5 p-3 bg-thirdteal rounded-2">
                                 <div class="text-center text-firstblue">
                                     <h2>Notre centre</h2>
                                 </div>
@@ -36,19 +36,19 @@ export default class ContactComponent extends HTMLElement{
                     <div class="row justify-content-center m-5">
                         <div class="col-4  rounded-2 mt-5 ">
                             <h2 class="fw-bold text-thirdteal">Contact</h2>
-                            <h4 class="text-thirdteal fw-semibold">Nos Horaires</h4>
-                            <p class="fw-medium text-thirdteal">
+                            <h4 class="text-fourteal fw-semibold">Nos Horaires</h4>
+                            <p class="fw-medium text-fourteal">
                                 <strong>Lundi au vendredi</strong>
                                 <br />
                                 10h-22h30
                             </p>
-                            <p class="fw-medium text-thirdteal">
+                            <p class="fw-medium text-fourteal">
                                 <strong>Samedi au dimanche</strong>
                                 <br />
                                 9h-20h
                             </p>
-                            <h4 class="text-thirdteal fw-semibold">Une question?</h4>
-                            <p class="fw-medium text-thirdteal">
+                            <h4 class="text-fourteal fw-semibold">Une question?</h4>
+                            <p class="fw-medium text-fourteal">
                                 Nous sommes à votre écoute,
                                 <br />
                                 prenez contact via le formulaire.

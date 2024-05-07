@@ -26,7 +26,7 @@ export default class HeaderComponent extends HTMLElement {
                                     <a class="nav-link" href="/restauration" target="spa">RestoBar</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/nosCoachs" target="spa">Nos Coatchs</a>
+                                    <a class="nav-link" href="/nosCoachs" target="spa">Nos Coachs</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="/contact" target="spa">Contact</a>

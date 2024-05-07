@@ -141,13 +141,13 @@ export default class HomeComponent extends HTMLElement{
                       <div class="col-6 text-center mt-4 mb-5 pt-5 pe-0">
                           <h2 class="text-uppercase text-thirdteal border-top border-end border-thirdteal fs-3 pt-3 my-0"><a class="link-thirdteal link-opacity-75-hover text-decoration-none" href="/restauration" target="spa">restauration</a></h2>
                           <div class="border-end border-thirdteal">
-                              <a href="/restauration" target="spa"><img class="w-50 h-auto mt-3 pt-3" src="./src/assets/img/Chef.png" alt="menu"></a>
+                              <a href="/restauration" target="spa"><img class="w-50 h-auto mt-3 pt-3" src="./src/assets/img/service-restauration.png" alt="menu"></a>
                           </div>
                       </div>
                       <div class="col-6 text-center pt-5 mt-4 mb-5 ps-0">
                           <h2 class="text-uppercase text-thirdteal border-top border-thirdteal fs-3 pt-3 my-0"><a class="link-thirdteal link-opacity-75-hover text-decoration-none" href="/restauration" target="spa">Enseignants</a></h2>
                           <div>
-                              <a href="/nosCoachs" target="spa"><img class="w-50 h-auto mt-3 pt-3" src="./src/assets/img/coach-tennis.png" alt="menu"></a>
+                              <a href="/nosCoachs" target="spa"><img class="w-50 h-auto mt-3 pt-3" src="./src/assets/img/tennis.png" alt="menu"></a>
                           </div>
                       </div>
                   </section>
