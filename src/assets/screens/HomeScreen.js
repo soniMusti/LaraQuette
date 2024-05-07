@@ -2,7 +2,7 @@ import FooterComponent from '../Components/FooterComponent.js';
 import HeaderComponent from '../Components/HeaderComponent.js';
 import HomeComponent from '../components/HomeComponent.js';
 
-export default class ModelScreen extends HTMLElement{
+export default class HomeScreen extends HTMLElement{
 
     constructor() {
         super();
@@ -22,4 +22,4 @@ export default class ModelScreen extends HTMLElement{
     }
 }
 
-customElements.define('model-screen', ModelScreen);
+customElements.define('home-screen', HomeScreen);
