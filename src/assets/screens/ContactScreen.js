@@ -1,23 +1,12 @@
-import FooterComponent from "../Components/FooterComponent.js";
-import HeaderComponent from "../Components/HeaderComponent.js";
+import ModelScreen from "../ModelScreen.js";
 import ContactComponent from "../components/ContactComponent.js";
 
-export default class ContactScreen extends HTMLElement{
+export default class ContactScreen extends ModelScreen {
 
     constructor() {
         super();
 
-        this.render();
-    }
-
-    render() {
-        const headerComponent = new HeaderComponent();
-        const contactComponent = new ContactComponent();
-        const footerComponent = new FooterComponent();
-
-        this.appendChild(headerComponent);
-        this.appendChild(contactComponent);
-        this.appendChild(footerComponent);
+        super.render(new ContactComponent);
     }
 }
 
