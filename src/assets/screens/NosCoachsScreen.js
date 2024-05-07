@@ -1,4 +1,4 @@
-import ModelScreen from "../ModelScreen.js";
+import ModelScreen from "./ModelScreen.js";
 import NosCoachsComponent from "../components/NosCoachsComponent.js";
 
 export default class NosCoachsScreen extends ModelScreen {

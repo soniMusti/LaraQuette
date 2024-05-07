@@ -1,4 +1,4 @@
-import ModelScreen from "../ModelScreen.js";
+import ModelScreen from "./ModelScreen.js";
 import ReservationsComponent from "../components/ReservationsComponent.js";
 
 export default class ReservationsScreen extends ModelScreen {

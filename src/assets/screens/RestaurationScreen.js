@@ -1,4 +1,4 @@
-import ModelScreen from "../ModelScreen.js";
+import ModelScreen from "./ModelScreen.js";
 import RestaurationComponent from "../components/RestaurationComponent.js";
 
 export default class RestaurationScreen extends ModelScreen {
