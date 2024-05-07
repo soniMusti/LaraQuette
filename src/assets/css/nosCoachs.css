@@ -1,14 +1,14 @@
 .team-boxed {
-    color:#ffff;
+    color:#9ac8cd;
     
   }
   
   .team-boxed .firstText {
-    color:#ffff;
+    color:#e1f7f5;
   }
 
   .team-boxed p {
-    color:#0e46a3;
+    color:#e1f7f5;
   }
   
   .team-boxed h2 {
@@ -47,21 +47,22 @@
   .team-boxed .item .box {
     text-align:center;
     padding:30px;
-    background-color:#ffffff;
+    background-color:#1e0342;
     margin-bottom:30px;
+    
   }
   
   .team-boxed .item .name {
     font-weight:bold;
     margin-top:28px;
     margin-bottom:8px;
-    color:inherit;
+    color:#9ac8cd;
   }
   
   .team-boxed .item .title {
     text-transform:uppercase;
     font-weight:bold;
-    color:#0e46a3;
+    color:#e1f7f5;
     letter-spacing:2px;
     font-size:13px;
   }
@@ -78,11 +79,11 @@
   
   .team-boxed .social {
     font-size:18px;
-    color:#0e46a3;
+    color:#e1f7f5;
   }
   
   .team-boxed .social a {
-    color:inherit;
+    color:#e1f7f5; 
     margin:0 10px;
     display:inline-block;
     opacity:0.7;
@@ -91,5 +92,12 @@
   .team-boxed .social a:hover {
     opacity:1;
   }
+
+  .team-boxed .social img {
+
+    background-color: #e1f7f5;
+  }
+
+  
   
   
