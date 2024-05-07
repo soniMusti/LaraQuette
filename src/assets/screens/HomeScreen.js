@@ -6,7 +6,7 @@ export default class HomeScreen extends ModelScreen {
     constructor() {
         super();
 
-        super.render(new HomeComponent);        
+        super.render(new HomeComponent());        
     } 
 }
 
