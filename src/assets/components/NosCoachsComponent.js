@@ -28,7 +28,7 @@ export default class NosCoachsComponent extends HTMLElement{
                             </div>
                             <div class="col-md-6 col-lg-4 item border-end ">
                                 <div class="box"><img class="rounded-circle" src="/src/assets/img/coachAlexx.png">
-                                    <h3 class="name">Delorobia</h3>
+                                    <h3 class="name">Delarobia</h3>
                                     <p class="title">Le dominateur</p>
                                     <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, mollitia. Aspernatur, ipsa doloribus numquam nihil sed, fugit temporibus nesciunt magnam qui eius veniam culpa unde!</p>
                                     <div class="social"><a href="/src/reservations.html">Reserver</a><a href="#"><img src="/src/assets/img/facebook.svg" alt=""></a><a href="#"><img src="/src/assets/img/instagram.svg" alt=""></i></a></div>

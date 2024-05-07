@@ -1,5 +1,6 @@
-import FooterComponent from './FooterComponent.js';
-import HeaderComponent from './HeaderComponent.js';
+
+import FooterComponent from '../Components/FooterComponent.js';
+import HeaderComponent from '../Components/HeaderComponent.js';
 
 export default class ModelScreen extends HTMLElement{
 
