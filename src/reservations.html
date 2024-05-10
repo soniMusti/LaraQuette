@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservation</title>
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <header>
@@ -28,7 +28,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="nosCoachs.html">Nos Coatchs</a>
                         </li>
-                                                <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item dropdown">
@@ -43,5 +43,87 @@
                     </ul>
                 </div>
             </div>
-          </nav>
+        </nav>
     </header>
+    <main class="bg-firstblue ">    
+        
+                <div class="row justify-content-center ">
+                    <div class="col-8 p-1 bg-thirdteal rounded-2">
+                        <div class="text-center text-firstblue">
+                            <h2>Réservation de cours</h2>
+                        </div>
+                        <div class="text-center">
+                            <p>
+                                Veuillez replir le formulaire pour réserver un cour
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+        <div class="container text-center p-1">
+            <div class="row justify-content-center ">
+                <form novalidate></form>
+                <div class="col-4 rounded-2">
+                    <div class="row justify-content-center input-group">
+                        <div input-init class=" col-sm-6">
+                            <label for="nom"></label>
+                            <input class="form-control" type="text" name="nom" id="nom" placeholder="Nom" required />
+                        </div>
+                        <div input-init class=" col-sm-6 ">
+                            <label for="prenom"></label>
+                            <input class="form-control" type="text" name="prenom" id="prenom" placeholder="Prenom" required />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 rounded-2">
+                    <div class="row justify-content-center input-group">
+                        <div input-init class=" ">
+                            <label for="email"></label>
+                            <input class="form-control form-outline" name="email" type="email" id="email" placeholder="Email" required />
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button data-mdb-ripple-init  type="submit" class="btn btn-firstblue mt-2 btn-block mb-4">Envoyer</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer bg-thirdteal pt-3 pb-3 fixed-bottom">
+        <div class="container-fluid m-0 p-0">
+            <div class="row align-items-center justify-content-between m-0">
+                <div class="col-4 text-firstblue text-center justify-content-center">
+                    <span>&copy; 2024 France | Tous droits réservés</span>
+                </div>
+                <div class="col-4">
+                    <ul class="nav d-flex justify-content-center align-items-center">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-firstblue fs-4 pt-0 pb-0"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-firstblue fs-4 pt-0 pb-0"><i class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-firstblue fs-4 pt-0 pb-0"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul class="nav d-flex flex-column flex-lg-row text-center m-0 p-0">
+                        <li class="nav-item">
+                            <a href="https://www.fft.fr" class="nav-link text-firstblue">FF Tennis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.ffbad.org" class="nav-link text-firstblue">FF Badminton</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.ffsquash.com" class="nav-link text-firstblue">FF Squash</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer> 
+</body>
+</html>
