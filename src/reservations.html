@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,20 @@
 
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-fourteal">
             <div class="container-fluid">
                 <a class="nav-link active" aria-current="page" href="index.html">
-                    <img src="assets/img/logo.png" alt="Logo raquette balle" width="75" height="auto" class="d-inline-block align-text-top">                 
+                    <img src="assets/img/logo.png" alt="Logo raquette balle" width="75" height="auto"
+                        class="d-inline-block align-text-top">
                 </a>
                 <a class="nav-link active" aria-current="page" href="index.html">
                     <h1 class=" fs-2">LaraQuette</h1>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="menu">
@@ -32,8 +36,9 @@
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Réservation
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Réservation
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="reservations.html">Cours</a></li>
@@ -45,22 +50,20 @@
             </div>
         </nav>
     </header>
-    <main class="bg-firstblue ">    
-        
-                <div class="row justify-content-center ">
-                    <div class="col-8 p-1 bg-thirdteal rounded-2">
-                        <div class="text-center text-firstblue">
-                            <h2>Réservation de cours</h2>
-                        </div>
-                        <div class="text-center">
-                            <p>
-                                Veuillez replir le formulaire pour réserver un cour
-                            </p>
-                        </div>
+    <main class="bg-firstblue ">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-8 p-1 bg-thirdteal rounded-2">
+                    <div class="text-center text-firstblue">
+                        <h2>Réservation de cours</h2>
+                    </div>
+                    <div class="text-center">
+                        <p>
+                            Veuillez replir le formulaire pour réserver un cour
+                        </p>
                     </div>
                 </div>
-            
-        <div class="container text-center p-1">
+            </div>
             <div class="row justify-content-center ">
                 <form novalidate></form>
                 <div class="col-4 rounded-2">
@@ -69,26 +72,38 @@
                             <label for="nom"></label>
                             <input class="form-control" type="text" name="nom" id="nom" placeholder="Nom" required />
                         </div>
-                        <div input-init class=" col-sm-6 ">
+                        <div class=" col-sm-6 ">
                             <label for="prenom"></label>
-                            <input class="form-control" type="text" name="prenom" id="prenom" placeholder="Prenom" required />
+                            <input class="form-control" type="text" name="prenom" id="prenom" placeholder="Prenom"
+                                required />
                         </div>
+                        <div class="col-sm-6">
+                            <label for="email"></label>
+                            <input class="form-control" name="email" type="email" id="email"
+                                placeholder="Email" required />
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="email"></label>
+                            <input class="form-control" name="email" type="email" id="email"
+                                placeholder="Email" required />
+                        </div>
+
                     </div>
                 </div>
                 <div class="col-4 rounded-2">
                     <div class="row justify-content-center input-group">
-                        <div input-init class=" ">
-                            <label for="email"></label>
-                            <input class="form-control form-outline" name="email" type="email" id="email" placeholder="Email" required />
-                        </div>
+                        
                     </div>
                 </div>
-                <div>
-                    <button data-mdb-ripple-init  type="submit" class="btn btn-firstblue mt-2 btn-block mb-4">Envoyer</button>
+                <div class="justify-content-center">
+                    <button data-mdb-ripple-init type="submit"
+                        class="btn btn-firstblue mt-2 btn-block mb-4">Envoyer</button>
                 </div>
-            </form>
+                </form>
             </div>
         </div>
+
+
     </main>
     <footer class="footer bg-thirdteal pt-3 pb-3 fixed-bottom">
         <div class="container-fluid m-0 p-0">
@@ -99,13 +114,16 @@
                 <div class="col-4">
                     <ul class="nav d-flex justify-content-center align-items-center">
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-firstblue fs-4 pt-0 pb-0"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="nav-link text-firstblue fs-4 pt-0 pb-0"><i
+                                    class="fa-brands fa-facebook"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-firstblue fs-4 pt-0 pb-0"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#" class="nav-link text-firstblue fs-4 pt-0 pb-0"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-firstblue fs-4 pt-0 pb-0"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="nav-link text-firstblue fs-4 pt-0 pb-0"><i
+                                    class="fa-brands fa-instagram"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -124,6 +142,7 @@
                 </div>
             </div>
         </div>
-    </footer> 
+    </footer>
 </body>
+
 </html>
