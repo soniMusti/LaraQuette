@@ -10,11 +10,13 @@ export default class ContactComponent extends HTMLElement{
 
     handleContactFormSubmit =(e) => {
         e.preventDefault();
-        const entries = Object.fromEntries(new FormData(e.target));
-        //const email = e.target.querySelector("#email").value;
-        //const nom = e.target.querySelector("#nom").value;
-        //const prenom = e.target.querySelector("#prenom").value;
-        //console.log(email);
+        // const email = e.target.querySelector("#email").value;
+        // const nom = e.target.querySelector("#nom").value;
+        // const prenom = e.target.querySelector("#prenom").value;
+        // const message = e.target.querySelector("#message").value;
+        // console.log(nom, prenom, email, message);
+
+        const entries = Object.fromEntries(new FormData(e.target));// permet de récupérer toutes les données du formulaire sous forme d'objet
         console.log(entries);
 
     }
