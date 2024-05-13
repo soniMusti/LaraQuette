@@ -51,59 +51,84 @@
         </nav>
     </header>
     <main class="bg-firstblue ">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-8 p-1 bg-thirdteal rounded-2">
-                    <div class="text-center text-firstblue">
-                        <h2>Réservation de cours</h2>
-                    </div>
-                    <div class="text-center">
-                        <p>
-                            Veuillez replir le formulaire pour réserver un cour
-                        </p>
-                    </div>
+
+        <div class="row justify-content-center ">
+            <div class="col-8 p-1 bg-thirdteal rounded-2">
+                <div class="text-center text-firstblue">
+                    <h2>Réservation de cours</h2>
+                </div>
+                <div class="text-center">
+                    <p>
+                        Veuillez replir le formulaire pour réserver un cour
+                    </p>
                 </div>
             </div>
-            <div class="row justify-content-center ">
+        </div>
+
+        <div class="container text-center p-1">
+            <div class="row">
                 <form novalidate></form>
-                <div class="col-4 rounded-2">
-                    <div class="row justify-content-center input-group">
-                        <div input-init class=" col-sm-6">
-                            <label for="nom"></label>
+                <div class="col-12 rounded-2">
+                    <div class="row input-group">
+                        <div input-init class="col-sm-3">
+                            <label for="nom">Nom</label>
                             <input class="form-control" type="text" name="nom" id="nom" placeholder="Nom" required />
                         </div>
-                        <div class=" col-sm-6 ">
-                            <label for="prenom"></label>
+                        <div input-init class="col-sm-3">
+                            <label for="prenom">Prénom</label>
                             <input class="form-control" type="text" name="prenom" id="prenom" placeholder="Prenom"
                                 required />
                         </div>
-                        <div class="col-sm-6">
-                            <label for="email"></label>
-                            <input class="form-control" name="email" type="email" id="email"
+                        <div input-init class="col-sm-3">
+                            <label for="email">E-mail</label>
+                            <input class="form-control form-outline" name="email" type="email" id="email"
                                 placeholder="Email" required />
                         </div>
-                        <div class="col-sm-6">
-                            <label for="email"></label>
-                            <input class="form-control" name="email" type="email" id="email"
-                                placeholder="Email" required />
+                        <div input-init class="col-sm-3">
+                            <label for="telephone">Téléphone</label>
+                            <input class="form-control form-outline" name="telephone" type="telephone" id="telephone"
+                                placeholder="Téléphone" required />
+                        </div>
+                        <div input-init class="col-sm-3">
+                            <label for="nbPersonne">Nombre de personnes</label>
+                            <input class="form-control form-outline" name="nbPersonne" type="number" id="nbPersonne"
+                                placeholder="Nombre de personnes" required />
                         </div>
 
                     </div>
-                </div>
-                <div class="col-4 rounded-2">
-                    <div class="row justify-content-center input-group">
-                        
+                    <div class="row input-group">
+                        <div input-init class="col-sm-3">
+                            <label for="sport">Veuillez choisir le sport :</label>
+                            <select name="sport" id="sport" class="form-select">
+                                <option value="squash">Squash</option>
+                                <option value="padel">Padel</option>
+                                <option value="bad">Badminton</option>
+                            </select>
+                        </div>
+                        <div input-init class="col-sm-3">
+                            <input class="form-check-input" name="location" type="checkbox" id="location" required>
+                                <label for="email" class="form-check-label">Location de chaussure</label>
+                            </input>
+                        </div>
+                        <div input-init class="col-sm-3">
+                            <input class="form-check-input" name="location" type="checkbox" id="location" required>
+                                <label for="email" class="form-check-label">Location de chaussure</label>
+                            </input>
+                        </div>
+                        <div input-init class="col-sm-3">
+                            <input class="form-check-input" name="location" type="checkbox" id="location" required>
+                                <label for="email" class="form-check-label">Location de chaussure</label>
+                            </input>
+                        </div>
                     </div>
                 </div>
-                <div class="justify-content-center">
+                <div class="row">
                     <button data-mdb-ripple-init type="submit"
                         class="btn btn-firstblue mt-2 btn-block mb-4">Envoyer</button>
                 </div>
                 </form>
             </div>
         </div>
-
-
     </main>
     <footer class="footer bg-thirdteal pt-3 pb-3 fixed-bottom">
         <div class="container-fluid m-0 p-0">
