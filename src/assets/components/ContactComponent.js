@@ -1,3 +1,6 @@
+import ContactMessage from "../models/ContactMessage.js";
+import ContactMessageService from "../services/ContactMessageServices.js";
+
 export default class ContactComponent extends HTMLElement{
 
     constructor() {
@@ -10,6 +13,7 @@ export default class ContactComponent extends HTMLElement{
 
     handleContactFormSubmit =(e) => {
         e.preventDefault();
+
         // const email = e.target.querySelector("#email").value;
         // const nom = e.target.querySelector("#nom").value;
         // const prenom = e.target.querySelector("#prenom").value;
@@ -19,6 +23,34 @@ export default class ContactComponent extends HTMLElement{
         const entries = Object.fromEntries(new FormData(e.target));// permet de récupérer toutes les données du formulaire sous forme d'objet
         console.log(entries);
 
+        //// Création d'une intance de la class ContactMessage avec les données récupérées dans entries
+        // const newMessage = new ContactMessage({
+        //     nom: entries.nom,
+        //     prenom: entries.prenom,
+        //     email: entries.email,
+        //     message: entries.message,
+        // });
+        //// appelle le service ContactMessageServvice() et utilise la méthode create(intance)
+        // const contactMessageService = new ContactMessageService();
+        // contactMessageService.create(entries);
+        // console.log(newMessage);
+
+        // Même chose avec la méthode try/catch
+        try{
+            const newMessage = new ContactMessage({
+                nom: entries.nom,
+                prenom: entries.prenom,
+                email: entries.email,
+                message: entries.message,
+            });
+
+            const contactMessageService = new ContactMessageService();
+            contactMessageService.create(entries);
+
+            console.log(newMessage);
+        }catch (error){
+            console.warn(error.message);
+        }
     }
 
     render() {
@@ -86,7 +118,7 @@ export default class ContactComponent extends HTMLElement{
                                     </div>
                                     <div input-init class="">
                                         <label for="message"></label>
-                                        <textarea class="form-control" name="message" id="message" cols="30" rows="10"></textarea>
+                                        <textarea class="form-control" name="message" id="message" minlength="10" cols="30" rows="10"></textarea>
                                     </div>
                                     <div>
                                         <button data-mdb-ripple-init  type="submit" class="btn btn-firstblue mt-2 btn-block mb-4">Envoyer</button>
