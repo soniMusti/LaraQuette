@@ -8,7 +8,7 @@ export default class FooterComponent extends HTMLElement {
 
     render() {
         return `
-            <footer class="footer bg-thirdteal pt-3 pb-3">
+            <footer class="footer bg-thirdteal pt-3 pb-3 sticky-bottom">
                 <div class="container-fluid m-0 p-0">
                     <div class="d-flex row align-items-center justify-content-between m-0">
                         <div class="col-4 text-firstblue text-center d-flex justify-content-center">
