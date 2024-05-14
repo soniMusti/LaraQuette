@@ -1,22 +1,31 @@
+import ContactMessage from "../models/contactMessage.js";
+import ContactMessageServices from "../services/contactMessageServices.js";
+
 export default class ContactComponent extends HTMLElement{
 
     constructor() {
         super();
-
         this.innerHTML = this.render();
-
         this.querySelector("form").onsubmit = this.handleContactFormSubmit;
     }
 
     handleContactFormSubmit =(e) => {
         e.preventDefault();
         const entries = Object.fromEntries(new FormData(e.target));
-        //const email = e.target.querySelector("#email").value;
-        //const nom = e.target.querySelector("#nom").value;
-        //const prenom = e.target.querySelector("#prenom").value;
-        //console.log(email);
-        console.log(entries);
-
+        
+        try{
+            let c = new ContactMessage({
+                firstName: entries.prenom,
+                lastName: entries.nom,
+                email: entries.email,
+                message: entries.message
+            });
+            console.log(c);
+            const service = new ContactMessageServices();
+            service.create(c);
+        }catch (error){
+            console.log(error);
+        }
     }
 
     render() {

@@ -5,6 +5,7 @@ import NosCoachsScreen from '../screens/NosCoachsScreen.js';
 import ReservationsScreen from '../screens/ReservationsScreen.js';
 import RestaurationScreen from '../screens/RestaurationScreen.js';
 import NotFoundScreen from '../screens/NotFoundScreen.js';
+import TestScreen from '../screens/TestScreen.js';
 
 
 
@@ -48,6 +49,9 @@ export default class Router {
         }
         else if (location.pathname == "/restauration") {
             this.#screen = new RestaurationScreen();
+        }
+        else if (location.pathname == "/test") {
+            this.#screen = new TestScreen();
         }
         else {
             this.#screen = new NotFoundScreen();
