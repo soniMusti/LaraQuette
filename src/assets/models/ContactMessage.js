@@ -31,7 +31,7 @@ export default class ContactMessage {
     }
 
     set nom(value) {
-        if(!value || !(isNaN(value))) {
+        if(!value || (typeof value) !== "string") {
             throw new Error ("Veuillez entrer un nom valide");
         }
         this.#nom = value;
@@ -41,7 +41,7 @@ export default class ContactMessage {
     }
 
     set prenom(value) {
-        if(!value || !(isNaN(value))) {
+        if(!value || (typeof value) !== "string") {
             throw new Error ("Veuillez entrer un prenom valide");
         }
         this.#prenom = value;
@@ -51,8 +51,8 @@ export default class ContactMessage {
     }
 
     set email(value) {
-        const regEx = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$/;
-        if(regEx.test(value)) {
+        const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$/;
+        if(regex.test(value)) {
             this.#email = value;
         } else {
             throw new Error (`"${value}" n'est pas un mail valide !`);
@@ -61,9 +61,10 @@ export default class ContactMessage {
     get message(){
         return this.#message;
     }
-
+    // */+€!:;,?<> 
     set message(value) {
-        if(!value) {
+    const regex = /^[a-zA-Z0-9.-/*+€!:;,?<> ]{10,}$/;
+        if(!value || (typeof value) !== "string" || !(regex.test(value)) ) {
             throw new Error ("Veuillez décrire en minimum 10 caractères la raison de votre contact");
         }
         this.#message = value;

@@ -6,9 +6,9 @@ export default class ContactMessageService {
 
     constructor() {
         if(localStorage.getItem('contactMessageList')) {
-            this.data = JSON.parse(localStorage.getItem('contactMessageList')).map(contact => new ContactMessage(contact))
+            this.getItemLocalStorage();
         } else {
-            localStorage.setItem('contactMessageList', JSON.stringify(this.data));
+            this.setItemLocalStorage(this.data);
         }
 
     }
@@ -16,12 +16,13 @@ export default class ContactMessageService {
     create(instance) {
         if (instance instanceof ContactMessage) {
             this.data.push(instance);
-            localStorage.setItem('contactMessageList', JSON.stringify(this.data));
+            this.setItemLocalStorage(this.data);
         }
     }
 
     read(filter) {
-
+        this.getItemLocalStorage();
+        return this.data.filter(filter);
     }
 
     update(instance) {
@@ -30,5 +31,14 @@ export default class ContactMessageService {
 
     delete(instance) {
 
+    }
+
+    // méthode pour éviter de répéter le localStorage.getItem() et localStorage.setItem().
+    getItemLocalStorage() {
+        this.data = JSON.parse(localStorage.getItem('contactMessageList')).map(contact => new ContactMessage(contact));
+    }
+
+    setItemLocalStorage(instance) {
+        localStorage.setItem('contactMessageList', JSON.stringify(this.data));
     }
 }
